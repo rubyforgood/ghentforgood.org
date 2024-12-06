@@ -1,8 +1,6 @@
-const nextConfig = {
+module.exports = {
   output: 'export',
   images: {
     unoptimized: true,
-  },
+  }
 }
-
-module.exports = nextConfig
