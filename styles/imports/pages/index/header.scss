@@ -1,0 +1,29 @@
+header {
+  background-color: $color-primary;
+  padding: 100px 0;
+
+  & * {
+    color: white;
+  }
+
+  & p {
+    font-size: 20px;
+  }
+
+  .header-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-grid {
+    grid-template-columns: repeat(auto-fill, 100%) !important;
+
+    .image {
+      display: none;
+    }
+  }
+}

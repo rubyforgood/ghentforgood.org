@@ -1,0 +1,124 @@
+.tracks {
+  background-color: $color-primary;
+
+  & * {
+    color: white;
+  }
+
+  .track-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 75px;
+
+    .track {
+      background-color: white;
+      text-align: center;
+      width: 100%;
+      padding: 30px 15px;
+      border-radius: 5px;
+      box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+      }
+
+      & p {
+        width: 75%;
+        margin: 0 auto;
+      }
+
+      & img {
+        width: 50%;
+      }
+
+      & * {
+        color: black;
+      }
+    }
+  }
+}
+
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 85vh;
+  width: 50vw;
+}
+
+@media (max-width: 768px) {
+  .Modal {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  background-color: rgba(30, 30, 30, 0.5);
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+@media (max-width: 900px) {
+  .track-grid {
+    grid-template-columns: repeat(auto-fill, 100%) !important;
+
+    .track {
+      & p {
+        width: 100% !important;
+      }
+    }
+  }
+  .Modal {
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+  }
+
+  .Overlay {
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+  }
+}
+
+@media (max-width: 768px) {
+  .track-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 15px;
+  }
+}

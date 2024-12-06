@@ -1,0 +1,35 @@
+table {
+  width: 100%;
+}
+
+.body {
+  height: 100%;
+  overflow-y: auto;
+}
+
+th {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+th, td {
+  padding: 10px 15px;
+}
+
+table tr:nth-child(even) {
+  background-color: #eee;
+}
+
+table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+table th {
+  color: white;
+  background-color: $color-primary;
+}
+
+.react-tabs__tab--selected {
+  background-color: rgb(22, 94, 103) !important;
+  color: white;
+}

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 120">
+  <!-- Left heart -->
+  <path d="M35 35
+           C 35 30, 30 25, 25 25
+           C 15 25, 15 40, 25 50
+           L 35 60
+           L 45 50
+           C 55 40, 55 25, 45 25
+           C 40 25, 35 30, 35 35" 
+        fill="#008080"/>
+
+  <!-- RUBY FOR text -->
+  <text x="75" y="50" font-family="Arial Black, sans-serif" font-weight="bold" font-size="40" fill="#008080">RUBY FOR</text>
+  
+  <!-- Right heart - adjusted spacing -->
+  <path d="M345 35
+           C 345 30, 340 25, 335 25
+           C 325 25, 325 40, 335 50
+           L 345 60
+           L 355 50
+           C 365 40, 365 25, 355 25
+           C 350 25, 345 30, 345 35" 
+        fill="#008080"/>
+  
+  <!-- GOOD text -->
+  <text x="75" y="105" font-family="Arial Black, sans-serif" font-weight="bold" font-size="65" fill="#FF6B6B">GOOD</text>
+</svg>
